@@ -25,4 +25,5 @@ module "bookstore-azure" {
   source  = "app.terraform.io/nimbusworld-demo/bookstore-azure/azurerm"
   version = "1.0.2"
   bookstore_title = "Azure bookstore in PROD" 
+  image = "prephcpregistry.azurecr.io/prephcr/bookstore-webserver:v2"
 }
