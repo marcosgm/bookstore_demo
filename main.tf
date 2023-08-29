@@ -17,12 +17,12 @@ terraform {
 
 module "bookstore-aws" {
   source  = "app.terraform.io/nimbusworld-demo/bookstore-aws/aws"
-  version = "1.0.1"
-  bookstore_title = "AWS Bookstore"
+  version = "1.0.2"
+  bookstore_title = "AWS Bookstore in PROD"
 }
 
 module "bookstore-azure" {
   source  = "app.terraform.io/nimbusworld-demo/bookstore-azure/azurerm"
   version = "1.0.1"
-  env_vars = { bookstore_title:  "Azure bookstore" }
+  env_vars = { bookstore_title:  "Azure bookstore in PROD" }
 }
